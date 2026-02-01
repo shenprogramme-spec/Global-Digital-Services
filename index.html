@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Global Digital Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google AdSense (à activer après acceptation) -->
+<!--
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+     data-ad-client="ca-pub-XXXXXXXXXXXX"
+     crossorigin="anonymous"></script>
+-->
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #0d6efd;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+section {
+  padding: 20px;
+}
+form {
+  background: white;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 6px;
+}
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+input, textarea, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+button {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+}
+button:hover {
+  background: #0b5ed7;
+}
+.lang {
+  text-align: center;
+  margin-bottom: 15px;
+}
+footer {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  background: #eee;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Global Digital Services</h1>
+  <p id="desc">
+    Professional CV, websites and digital services worldwide
+  </p>
+</header>
+
+<section class="lang">
+  <button onclick="setLang('en')">English</button>
+  <button onclick="setLang('fr')">Français</button>
+</section>
+
+<section>
+<form action="https://formsubmit.co/shenprogramme@gmail.com" method="POST">
+
+  <!-- Config email -->
+  <input type="hidden" name="_subject" value="New Client Order - Global Digital Services">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <label id="fn">First Name</label>
+  <input type="text" name="First Name" required>
+
+  <label id="ln">Last Name</label>
+  <input type="text" name="Last Name" required>
+
+  <label id="age">Age</label>
+  <input type="number" name="Age">
+
+  <label id="prof">Profession</label>
+  <input type="text" name="Profession">
+
+  <label id="exp">Work Experience</label>
+  <textarea name="Experience"></textarea>
+
+  <label id="edu">Education Level</label>
+  <input type="text" name="Education">
+
+  <label id="phone">Phone / WhatsApp</label>
+  <input type="text" name="Phone">
+
+  <label>Email</label>
+  <input type="email" name="Client Email" required>
+
+  <label id="service">Service Requested</label>
+  <select name="Service">
+    <option>CV Creation</option>
+    <option>Website Creation</option>
+    <option>Advertisement Design</option>
+    <option>Online Publication</option>
+  </select>
+
+  <label id="msg">Additional Information</label>
+  <textarea name="Message"></textarea>
+
+<label>Payment Method</label>
+<select name="Payment Method" required>
+  <option value="">-- Choose Payment Method --</option>
+  <option>TiMoney (Togo)</option>
+  <option>Mobile Money (Other Countries)</option>
+  <option>Payoneer (International)</option>
+  <option>PayPal / Card</option>
+</select>
+  <button type="submit" id="send">Send Order</button>
+</form>
+<a href="https://wa.me/228 71624718" target="_blank"
+   style="display:block;text-align:center;background:#25D366;color:white;padding:12px;border-radius:5px;text-decoration:none;font-weight:bold">
+   Contact on WhatsApp After Payment
+</a>
+<div style="max-width:600px;margin:auto;background:#fff;padding:20px;border-radius:6px;margin-top:20px">
+  <h3>Payment Instructions</h3>
+
+  <p><strong>🇹🇬 TiMoney (Togo)</strong><br>
+  Phone: <strong>+228 98767971</strong><br>
+  Name: <strong>Your Name</strong></p>
+
+  <p><strong>🌍 International Payments</strong></p>
+  <ul>
+    <li>Payoneer: yourname@payoneer.com</li>
+    <li>PayPal: yourname@gmail.com</li>
+    <li>Bank Card: via PayPal / Payoneer</li>
+  </ul>
+
+  <p style="color:#0d6efd;font-weight:bold">
+    After payment, please send proof via WhatsApp or Email.
+  </p>
+
+  <p>📱 WhatsApp: +228 71624718<br>
+     📧 Email: shenprogramme@gmail.com</p>
+</div>
+</section>
+
+<footer>
+© 2026 Global Digital Services – Work Worldwide – Paid Services
+</footer>
+
+<script>
+function setLang(lang){
+  if(lang === 'fr'){
+    document.getElementById("desc").innerText =
+      "Services professionnels de CV, sites web et publicités partout dans le monde";
+    fn.innerText = "Prénom";
+    ln.innerText = "Nom";
+    age.innerText = "Âge";
+    prof.innerText = "Profession";
+    exp.innerText = "Expérience professionnelle";
+    edu.innerText = "Niveau d'étude";
+    phone.innerText = "Téléphone / WhatsApp";
+    service.innerText = "Service demandé";
+    msg.innerText = "Informations supplémentaires";
+    send.innerText = "Envoyer la commande";
+  } else {
+    location.reload();
+  }
+}
+</script>
+
+</body>
+</html>
